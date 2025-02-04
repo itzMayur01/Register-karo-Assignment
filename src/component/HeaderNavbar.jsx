@@ -2,14 +2,26 @@ import { CiSearch } from "react-icons/ci";
 import { registerKaroLogo } from "../assets/assests";
 import { FaAngleDown } from "react-icons/fa";
 import { IoIosMenu } from "react-icons/io";
+import { useState } from "react";
+import { IoClose } from "react-icons/io5";
 
 const HeaderNavbar = () => {
+  const [navOpen, setNavOpen] = useState(false);
+  const toggleNav = () => {
+    setNavOpen(!navOpen);
+  };
+
+  const closeNav = () => {
+    setNavOpen(false);
+  };
+
   return (
     <>
       <nav>
-        <span className="menu-icon">
+        <span className="menu-icon" onClick={toggleNav}>
           <IoIosMenu />
         </span>
+
         <div className="registerKaro-logo">
           <img
             className="registerKaro-logo-1"
@@ -23,11 +35,17 @@ const HeaderNavbar = () => {
           />
         </div>
         <div className="main-nav">
-          <ul className="nav-items">
-            <li>
+          <span
+            className={`close-icon ${navOpen ? "" : "close"}`}
+            onClick={closeNav}
+          >
+            <IoClose />
+          </span>
+          <ul className={` nav-items ${navOpen ? "open" : ""} `}>
+            <li onClick={closeNav}>
               <a href="#home">Home</a>
             </li>
-            <li>
+            <li onClick={closeNav}>
               <a href="#services">
                 Our Services{" "}
                 <span className="down-icon">
@@ -35,13 +53,13 @@ const HeaderNavbar = () => {
                 </span>
               </a>
             </li>
-            <li>
+            <li onClick={closeNav}>
               <a href="#blog">Blog</a>
             </li>
-            <li>
+            <li onClick={closeNav}>
               <a href="#contact">Contact Us</a>
             </li>
-            <li>
+            <li onClick={closeNav}>
               <a href="#about">About us</a>
             </li>
           </ul>
