@@ -36,7 +36,7 @@ const AppDownload = () => {
           <img src={phone} alt="App Download" />
         </div>
       </div>
-      <ImportantNumbers />
+      {/* <ImportantNumbers /> */}
     </>
   );
 };

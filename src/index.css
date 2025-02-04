@@ -132,7 +132,7 @@ html {
   font-family: Inter;
   font-size: 14px;
   font-weight: 400;
-  line-height: 21px;
+  /* line-height: 21px; */
   letter-spacing: 1.5px;
   text-align: center;
   text-underline-position: from-font;
@@ -148,7 +148,7 @@ html {
   font-family: Inter;
   font-size: 32px;
   font-weight: 700;
-  line-height: 38.4px;
+  /* line-height: 38.4px; */
   letter-spacing: 0.1599999964237213px;
   text-align: center;
   text-underline-position: from-font;
@@ -170,7 +170,6 @@ html {
 .card {
   width: 384px;
   height: 444px;
-  flex-basis: 25%;
   max-width: max-content;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -633,7 +632,7 @@ html {
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  width: 210.31px;
+  width: 100%;
   height: 20px;
 
 
@@ -1185,7 +1184,7 @@ nav ul li .search-logo {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  overflow-x: hidden;
+
 }
 
 .left-container {
@@ -1292,11 +1291,8 @@ nav ul li .search-logo {
 .about-container-main {
   width: 100%;
   height: auto;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+  margin-top: 145px;
 
-  padding: 0 5PX;
 }
 
 
@@ -1514,7 +1510,7 @@ nav ul li .search-logo {
   position: relative;
   width: 100%;
   height: 353px;
-
+  overflow-x: hidden;
 
 
 }
@@ -2007,13 +2003,14 @@ nav ul li .search-logo {
 
 
 .app-download-container {
-  width: 100%;
+
   height: 491px;
   background: #1C4670;
   display: flex;
   justify-content: space-around;
   align-items: center;
   color: white;
+  padding: 36px;
 }
 
 
@@ -2064,8 +2061,8 @@ nav ul li .search-logo {
 }
 
 .downlaod-right img {
-  width: 664px;
-  height: 444px;
+  width: 783px;
+  height: 516px;
   object-fit: cover;
   border-radius: 0 53px 0 0;
 
@@ -2411,7 +2408,7 @@ nav ul li .search-logo {
 .contact-container {
   width: 100%;
   height: 330px;
-  margin-top: 150px;
+  margin-top: 36px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2645,12 +2642,8 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: Fixed (1, 440px) px;
-  height: Hug (176px) px;
-  top: 8088px;
-  padding: 64px 128px 64px 128px;
-  gap: 32px;
-  border-radius: 20px 0px 0px 0px;
+  width: 100%;
+  height: 176px;
   background: rgba(255, 255, 255, 1);
 }
 
@@ -2659,8 +2652,10 @@ footer {
   height: Hug (48px) px;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 21px;
 }
 
 .collaboration-Header img {
@@ -2699,6 +2694,7 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  margin-bottom: 40px;
 }
 
 .question ul {
@@ -2785,70 +2781,6 @@ footer {
 
 /* /media query */
 @media (max-width: 768px) {
-  .about-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 90px;
-  }
-
-  .about-container-main {
-    width: 100%;
-  }
-
-  .right-container {
-    margin-top: 60px;
-    width: 87%;
-    height: auto;
-  }
-
-  /* .about-container .heading-1,
-  .about-container .heading-2 {
-    text-align: center;
-    margin: 10px;
-  } */
-
-  .heading-1 {
-    font-size: 20px;
-    font-weight: 700;
-
-  }
-
-  .heading-2 {
-    font-size: 52px;
-    font-weight: 700;
-
-  }
-
-  .about-container .about-desc {
-    width: 100%;
-    height: auto;
-  }
-
-  .about-btn {
-    width: 195px;
-    height: 53px;
-    font-size: 18px;
-
-  }
-
-
-  .about-container .right-container img {
-    width: 700px;
-    height: auto;
-  }
-
-
-
-  .about-design,
-  .about-design2 {
-    display: none;
-
-  }
-
-  body {
-    width: 100vh;
-  }
 
 
 
@@ -2923,5 +2855,810 @@ footer {
     font-size: 40px;
   }
 
-  .registerKaro-logo {}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1464px) {
+
+  .about-design,
+  .about-design2 {
+    display: none;
+  }
+
+  .WhyRegisterKaro-card.left-card:nth-child(1) {
+    display: none;
+  }
+
+  .WhyRegisterKaro-container {
+    flex-direction: column;
+
+  }
+
+  .why-registerkaro-right {
+    width: 100%;
+  }
+
+  .WhyRegisterKaro-cards {
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 1350px) {
+  .right-container {
+    width: 466px;
+    height: auto;
+  }
+
+  .about-container .right-container img {
+    width: 466px;
+    height: auto;
+  }
+}
+
+
+@media (max-width: 1260px) {
+  .about-container .right-container img {
+    width: 365px;
+  }
+
+
+  .right-container {
+    width: 365px;
+
+  }
+
+  .video-container {
+    width: 415px;
+    height: 226px;
+  }
+
+
+  .video-container iframe {
+    width: 415px;
+    height: 226px;
+  }
+
+}
+
+
+
+@media (max-width: 1108px) {
+  .about-container {
+    flex-direction: column-reverse;
+    ;
+    gap: 25px;
+
+  }
+
+  .about-container .right-container img {
+    width: 579px;
+    height: 418px;
+  }
+
+  .right-container {
+    width: 579px;
+    height: auto;
+    margin-top: 100px;
+
+  }
+
+  .left-container {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .left-container .heading-1 {
+    position: relative;
+    bottom: 588px;
+    text-align: center;
+  }
+
+  .left-container .heading-2 {
+    position: relative;
+    text-align: center;
+    bottom: 578px;
+
+  }
+
+  .about-container .about-desc {
+    width: 90%;
+    margin: auto;
+
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .video-container {
+    width: 352px;
+    height: 197px;
+  }
+
+  .video-container iframe {
+    width: 352px;
+    height: 197px;
+  }
+
+  .happy-client-content p {
+    margin: 0;
+  }
+
+  .downlaod-right img {
+    width: 783px;
+    height: 444px;
+  }
+
+  .downlaod-right {
+    margin-top: 222px;
+  }
+}
+
+
+@media (max-width: 1152px) {
+  .downlaod-right img {
+    width: 658px;
+    height: 356px;
+  }
+
+  .downlaod-right {
+    margin-top: 212px;
+  }
+}
+
+
+@media (max-width: 1032px) {
+  .downlaod-right img {
+    width: 531px;
+    height: 316px;
+  }
+
+  .downlaod-right {
+    margin-top: 252px;
+  }
+}
+
+
+@media (max-width: 900px) {
+  .downlaod-right {
+    display: none;
+  }
+}
+
+
+
+
+@media (max-width: 970px) {
+  .video-intro-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .video-intro-container {
+    height: auto;
+  }
+
+  .video-container iframe {
+    width: 572px;
+    height: 400px
+  }
+
+  .video-container {
+    width: 572px;
+    height: 400px;
+    margin-top: 44px;
+    margin-bottom: 50px;
+  }
+
+
+}
+
+
+
+
+@media (max-width: 861px) {
+  .why-registerkaro-left {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0px;
+  }
+
+  .downlaod-right img {
+    /* display: none; */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 786px) {
+  .home-content {
+    width: 100%;
+    height: auto;
+    position: static;
+
+  }
+
+  .home-container {
+    height: auto;
+    padding: 35px;
+  }
+
+  .background-1 {
+    background-image: none;
+  }
+
+  .heading-11 {
+    width: 100%;
+    height: auto;
+  }
+
+  .description-home {
+
+    width: 100%;
+    height: auto;
+  }
+
+  .companies {
+    padding: 0px 32px 32px 32px;
+
+  }
+
+  .services-container {
+    padding: 0px 32px 32px 32px;
+  }
+
+
+  .see-all-services-btn-container {
+    width: 100%;
+    padding: 0px 32px 32px 32px;
+  }
+
+  .about-container {
+    padding: 0px 32px 32px 32px;
+  }
+
+  .WhyRegisterKaro-main-container {
+    padding: 0px 32px 32px 32px;
+  }
+
+  .video-intro-container {
+    padding: 36px;
+  }
+
+  .happy-client-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    padding: 32px;
+    width: 70%;
+  }
+
+  .happy-client-container {
+
+    width: 100%;
+    padding: 32px;
+  }
+
+  .application-form-section {
+    padding: 37px;
+    width: 100%;
+    height: auto;
+  }
+
+
+  .application-form-section ul {
+    flex-direction: column;
+    gap: 40px;
+    height: auto;
+    justify-content: center;
+
+  }
+
+  .blog-container {
+    padding: 37px;
+    width: 100%;
+  }
+
+  .testimonial-container {
+    margin-top: 79px;
+  }
+
+  /* .app-download-container {
+    width: 100%;
+  } */
+
+  .app-download-container {
+    padding: 38px;
+    width: 100%;
+  }
+
+  .card-container {
+    padding: 32px;
+  }
+
+  .testimonial-container {
+    padding: 37px;
+  }
+
+  .FAQ {
+    padding: 38px;
+
+  }
+
+  .contact-container {
+    padding: 38px;
+
+  }
+
+  .contact-container .heading-2 {
+    height: auto;
+  }
+
+  .collaboration-Container {
+    padding: 38px;
+    height: auto;
+  }
+
+  footer {
+    padding: 38px;
+
+  }
+
+
+}
+
+
+
+@media (max-width: 610px) {
+
+
+
+  .home-container {
+    height: 752px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+  }
+
+
+  .heading-11 {
+    font-size: 42px;
+    text-align: center;
+
+  }
+
+  .description-home {
+    text-align: center;
+  }
+
+  .rating-clients-financial {
+    width: 100%;
+    flex-direction: column;
+    justify-content: last baseline;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 29px;
+  }
+
+  .btn-container {
+
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+    margin-bottom: -37px;
+
+
+
+  }
+
+  .google-rating {
+    justify-content: center;
+  }
+
+  .line {
+    margin: auto auto;
+  }
+
+  .heading-container {
+    margin-bottom: 50px;
+  }
+
+
+  .service-card-container {
+    margin-top: 100px;
+  }
+
+  .about-btn {
+    width: 100%;
+  }
+
+  .about-container .right-container img {
+    width: 478px;
+    height: auto;
+  }
+
+  .right-container {
+    width: 478px;
+    margin-top: 20px;
+  }
+
+
+
+  .left-container .heading-1 {
+    position: relative;
+    bottom: 487px;
+    text-align: center;
+
+  }
+
+  .left-container .heading-2 {
+    position: relative;
+    text-align: center;
+    bottom: 492px;
+
+
+  }
+
+  .see-all-services-btn {
+    width: 100%;
+  }
+
+  .video-intro-text h1 {
+    text-align: center;
+  }
+
+  .video-intro-text p {
+    text-align: center;
+  }
+
+  .testimonial-section {
+    padding: 0;
+  }
+
+
+  .testimonial-text {
+    /* display: none; */
+    width: 288px;
+
+  }
+
+  .question {
+    height: auto;
+  }
+
+  .contact-container {
+    margin-top: 166px;
+  }
+
+
+  .footer-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer {
+    height: auto;
+  }
+
+  .footer-container .column1 {
+    width: 100%;
+  }
+
+  .column1 ul {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .column1 ul p {
+    width: 100%;
+    /* margin-left: 31px; */
+    text-align: center;
+
+  }
+
+  .column1,
+  .column2,
+  .column3,
+  .column4,
+  .column5 {
+    width: 100%;
+  }
+
+
+
+}
+
+
+@media (max-width: 420px) {
+
+  .right-container {
+    width: 381px;
+    height: auto;
+  }
+
+  .about-container .right-container img {
+    width: 381px;
+    height: auto;
+  }
+
+  .left-container .heading-1 {
+    position: relative;
+    bottom: 404px;
+    text-align: center;
+
+  }
+
+  .left-container .heading-2 {
+    position: relative;
+    text-align: center;
+    bottom: 404px;
+
+
+  }
+
+  .video-container {
+    margin-top: 113px;
+  }
+
+  .question ul li p {
+    height: auto;
+  }
+
+  .FAQ {
+    height: auto;
+    width: 100%;
+  }
+
+  .contact-container {
+    margin: 0;
+  }
+
+  .contact-container form {
+    width: 100%;
+  }
+
+  .contact-container form input {
+    width: 100%;
+  }
+
+
+
+
+}
+
+
+@media (max-width: 542px) {
+  .video-container {
+    width: 419px;
+    height: 236px;
+
+  }
+
+  .video-container iframe {
+    width: 419px;
+    height: 236px;
+
+  }
+
+  .video-intro-container {
+    width: 100%;
+  }
+
+  .video-intro-text {
+    width: 100%;
+  }
+
+  .card-container {
+    margin-top: 79px;
+  }
+}
+
+
+
+
+
+
+
+@media (max-width: 470px) {
+  .btn-container {
+    flex-direction: row;
+    margin-top: 212px;
+  }
+
+  .rating-clients-financial {
+    align-items: center;
+
+
+  }
+
+  .heading-11 {
+    font-size: 35px;
+  }
+
+  .description-home {
+    font-size: 16px
+  }
+
+  .nav-search button {
+    display: none;
+  }
+
+  .header-top-container .logos-container {
+
+    display: none;
+  }
+
+  .header-top-container ul {
+    padding: 0;
+  }
+
+  .header-top-container {
+    justify-content: center;
+  }
+
+  .service-card {
+    border-left: none;
+  }
+
+  .WhyRegisterKaro-container .desc {
+    margin: 64px 0 0 0;
+    text-align: center;
+  }
+
+  .WhyRegisterKaro-container .heading-1,
+  .WhyRegisterKaro-container .heading-2 {
+    text-align: center;
+  }
+
+  .contact-container form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .contact-container form button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+
+
+
+@media (max-width: 376px) {
+  .home-container {
+    height: 910px;
+    margin-top: -52px;
+
+  }
+
+
+  .left-container .heading-1 {
+    position: relative;
+    bottom: 353px;
+    text-align: center;
+
+  }
+
+  .left-container .heading-2 {
+    position: relative;
+    text-align: center;
+    bottom: 358px;
+  }
+
+  .right-container {
+    width: 322px;
+    height: auto;
+  }
+
+  .about-container .right-container img {
+    width: 322px;
+    height: auto;
+  }
+
+  .video-container iframe {
+    width: 322px;
+    height: 181px;
+  }
+
+  .video-container {
+    width: 322px;
+    height: 181px;
+    margin-top: 150px
+  }
+
+  .question-container {
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
+
+  .contact-container {
+    height: auto;
+  }
+
+  .contact-container ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 303px) {
+  nav ul li .search-logo {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+@media (max-width: 1042px) {
+  .registerKaro-logo {
+    margin: 0;
+  }
 }
